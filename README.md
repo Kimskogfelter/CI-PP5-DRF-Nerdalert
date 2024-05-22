@@ -3,7 +3,6 @@
 
 ## NERD ALERT DRF API - PICTURE SHARING SITE
 
-![picture of the mockup of the website](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/mockup-healthy-you.webp)
 
 ### PURPOSE
 
@@ -11,31 +10,7 @@
 
 It's a website for people who want to share their favourite picture from any computer/video game they like to play and be able to discuss the games with likeminded people. Maybe you want to find people just like you who enjoys the worlds of video/computer games. Or want some motivation or find new games to try. Or just have someone to talk about video/computer games with. The goal is to make people want to join the Nerd Alert community and hopefully find new likeminded friends. Users can easily navigate to the different pages of the website with the navigation menu at the top. The navigation menu contains a logo which takes the user to the home page if they click on it. It also has a total of seven menus: Home, Feed, Favourites, Profile, Contact, Sign in, Sign out and Sign up. If the user has registered and is logged in he/she can see Add a picture, check out their own feed which shows posts by the users they are following, check their liked favourite posts and Sign in, Sign up is replaced by Sign out. If the user havent created a user or is logged out they can only see the home, contact, sign in and sign up menus. The webpage got a back and frontend part which are in two separate IDEs. This is the backend/API IDE. 
 
-### UX DESIGN
 
----
-
-#### USER STORIES
-
-- #### As a first time user
-
-  - I want to easy find what the website offers
-  - I want to navigate easy through the different menus
-  - I want to find the links to other social media platform where I can find and search the recipes through other platforms
-  - I want to be able to join the website so I easy can find new/saved recipes
-  - I want to be able to join the website so I can write my own recipes
-  - I want to be able to rate recipes
-  - I want to be able to comment on recipes
-  
-- #### As a returning and frequent user
-
-  - I want to log in and see saved/created recipes
-  - I want to see if the website is updated with new recipes
-  - I want to be able to update my recipes
-  - I want to be able to answer on commented recipes
-  - I might want to contact Healthy You if I got any questions
-  
-#### All users want to be able to scroll through the website on their phones without any disturbing events and easy find what they are looking for
 
 ### AGILE METHODS
 

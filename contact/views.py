@@ -1,3 +1,14 @@
-from django.shortcuts import render
+from rest_framework import generics, permissions
+from .models import ContactModel
+from .serializers import ContactSerializer
 
-# Create your views here.
+class ContactListView(generics.ListCreateAPIView):
+    queryset = ContactModel.objects.all()
+    serializer_class = ContactSerializer
+    permission_classes = [permissions.IsAdminUser]
+    
+
+class ContactDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = ContactModel.objects.all()
+    serializer_class = ContactSerializer
+    permission_classes = [permissions.IsAdminUser]
