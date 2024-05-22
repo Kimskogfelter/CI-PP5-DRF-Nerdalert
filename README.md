@@ -182,67 +182,9 @@ Also adding the heart symbol to make each user able to save a recipe they really
 
 ---
 
-- [https://validator.w3.org/nu/] to validate html code
-- [https://jigsaw.w3.org/css-validator/] to validate css code
-- used [https://favicon.io/favicon-converter/] to generate the favicon
 - Django REST
-- Bootstrap
-- HTML
-- CSS
-- Javascript
 - Cloudinary
-
-### WIREFRAMES
-
----
-
-#### HOME PAGE
-
-- Changed the text and icons in the footer to be centered
-- Decided to remove the recipes to their own page and insted have clickable links for different food type recipes
-
-![Home page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Home%20page.webp)
-
-#### RECIPES PAGE
-
-- Removed the rating function due to not having enough time to finish that part
-
-![Recipes page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Recipes%20main%20page.webp)
-
-#### RECIPES DETAIL PAGE
-
-- Added a comment function so a logged in user can comment on the recipe
-- Removed the rating function due to not having enough time to finish that part
-
-![Recipes detail page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Recipe%20page.webp)
-
-#### ABOUT PAGE
-
-- Decided to make the image to the left take up the whole height of the webpage to make it look more appealing
-
-![About page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20About%20page.webp)
-
-#### CONTACT PAGE
-
-- Decided to make the contact page have the same layout as the about page with a picture to the left with a text describing what the user can do on that page. This because i want the webpage to have a similar theme
-
-![Contact page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Contact%20page.webp)
-
-#### REGISTER PAGE
-
-- Decided to make the log in and register page to have a similar look so the pages follows a similar theme
-- Decided to remove the image to the left so the page only got the form left
-
-![Register page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Registration%20page.webp)
-
-#### LOG IN PAGE
-
-- Decided to make the log in and register page to have a similar look so the pages follows a similar theme
-- Decided to remove the image to the left so the page only got the form left
-
-![Log in page made in wireframes](https://raw.githubusercontent.com/Kimskogfelter/Recipe-site/main/static/images/wireframes/Recipe%20site%20-%20Log%20in%20page.webp)
-
-#### The profile and add recipe pages was made after I had finished the wireframes. They were made when I did the tutorial on Youtube for the webpage. Before that I had in mind to only have a saved recipes page that showed up when the user was logged in insted of a profile page. But quickly realized that I needed more subheadings on the saved recipes page and there for choose to create the profile page insted. Due to not having enough time i choose to delete the save recipes part of the profile and just have the recipes the user has created. 
+- Python 
 
 
 ### TESTING
@@ -490,20 +432,6 @@ I also did manual testings on all website pages to ensure that everything was wo
 
 - 
 
-#### LIGHTHOUSE
-
-#### I also tested every page in Lighthouse with the result below
-
-- #### Home Page - Mobile version
-
-![lighthouse result for home page, mobile version](static/images/lighthouse/home-page-lighthouse-mobile.jpg)
-
-- #### Home Page - Desktop version
-
-![lighthouse result for home page, desktop version](static/images/lighthouse/home-page-lighthouse.jpg)
-
-
-
 ### DEPLOYMENT
 
 ---
@@ -549,17 +477,15 @@ I also did manual testings on all website pages to ensure that everything was wo
 
 #### MEDIA
 
-- favicon from [ttps://fontawesome.com/icons/puzzle-piece?f=classic&s=solid&pc=%234e6858]
-- logo in header are from https://app.logo.com/dashboard/your-logo-files
-- icons in the footer are from https://uxwing.com/tag/social-media-icons/page/3/
 - The images are from the below sources:
   - default post picture https://codeinstitute.s3.amazonaws.com/ReactEssentials/DRF/Images/default_post.jpg 
   - default profile picture https://codeinstitute.s3.amazonaws.com/ReactEssentials/DRF/Images/default_profile.jpg
 
 #### CODE
 
-- I used the tutorial on this page to make the contact form work https://learndjango.com/tutorials/django-email-contact-form-tutorial
-- I used Code Institutes API project walkthru to make this API https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRF+2021_T1/courseware/f775d54df4da44d18309888b3fe884f7/a146472df94c4691951c4f58ac43e30e/?child=first and be able to add own modules to it to make it "my own"
+- I used Code Institutes API project walkthru to make this API https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRF+2021_T1/courseware/f775d54df4da44d18309888b3fe884f7/a146472df94c4691951c4f58ac43e30e/?child=first and be able to add own modules to it to make it "my own". I changed the likes app to be favourites insted. And the contact app is taken from another source: see below. The rest in this API is copied from the above links walkthru. 
+- I used this github projec to help me create the contact app and make it work: https://github.com/Hujanen91/sourdoughcircle_api/tree/main/contact. 
+I used the views.py, models.py and serializers.py to help me structure my own code. 
 
 
 #### All the thanks to the lovely students on slack. Specially the students in the community-sweden group for helping out when needed and my mentor for being so supportive and helpfull

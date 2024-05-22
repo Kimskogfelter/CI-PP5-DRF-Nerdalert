@@ -40,6 +40,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io',]
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io',]
+
 
 # Application definition
 
