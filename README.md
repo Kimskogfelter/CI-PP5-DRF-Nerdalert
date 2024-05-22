@@ -447,7 +447,8 @@ I also did manual testings on all website pages to ensure that everything was wo
 8. At the right handside go to Deployment.
 9. Then press the ![picture of the deployment icon on github](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/deployment-icon.jpg) to go to the live website.
 
-    This project was also deployed to Heroku.com. The following steps shows how you do it:
+    This project was deployed to Heroku.com. The following steps shows how you do it:
+    
 1. Start by creating a account on Herokus website
 2. Then log in to your account and create the app for your website
 3. When the app is created go to the settings tab
@@ -466,6 +467,34 @@ I also did manual testings on all website pages to ensure that everything was wo
 16. Then scroll down to the bottom of the page and click on the "deploy branch" button to start a manual deployment
 17. When the deployment is done you'll see a "View" button at the bottom of the page
 18. Press that button to view your deployed app
+
+  This project uses a database from ElephantSQL. The following steps shows how you create a database through ElephantSQL:
+
+1. Log in to or create a new account at the ElephantSQL database webpage
+2. Click at "create new instance"
+3. Choose a name and plan for your database, name could be the same as your webpage to make things easy
+You can leave the tags field blank
+4. Click on the "select region" button and choose a region/data center close to you and then press the "review" button
+5. Check that all information is correct and press the "create instance" button
+6. Click on your newly made database
+7. Click on the STATS menu and check that the PostgresSQL version is higher then 12 (if its not higher then 12 you need to go back to step 1 and create a new instance and choose a different data center. If you are in Europe choose one thats in Europe)
+8. When your PostgresSQL version is 12 or higher go to the DETAILS menu and copy the URL
+9. Go back to your IDE and create a new file named "env.py" in your root directory, the same as your Procfile
+10. Open the ".gitignore" file and add the "env.py" to that
+11. Open your "env.py" file and add this text: "import os os.environ.setdefault('DATABASE_URL', '')"
+12. Change the text "" to your own data base URL you copied from ElephantSQL
+13. Pip install dj-database-url~=0.5 and psycopg2~=2.9, these are required to be able to connect to your PostgresSQL database
+14. Pip freeze your requirements.txt file
+15. Open your "settings.py" and add this at the top of it "import os import dj_database_url if os.path.isfile('env.py'): import env"
+16. Still in your "settings.py" file, find the local sqlite3 database that Django provides and comment that one out so you dont use it
+17. Then add this text under the local database you just commented out "DATABASES = { 'default': dj_database_url.parse(os.environ.get("DATABASE_URL")) }"
+18. Now that your project is connected to the database you need to use the migrate command in your terminal, copy this text to your terminal and press enter "python manage.py migrate"
+19. In your "settings.py" file change DEBUG to False! IMPORTANT
+20. Now git add, commit and push all the changes to Github
+21. Go to your Heroku dashboard and go to the DEPLOY tab and do a manual deployment
+22. When the deployment is done go to the settings tab and reveal your config vars
+23. Add a new confiv var with the KEY "DATABASE_URL" and the VALUE is your ElephantSQL URL
+24. Now your deployed app should be connected to your new PostgresSQL database
 
 ### ISSUES
 
