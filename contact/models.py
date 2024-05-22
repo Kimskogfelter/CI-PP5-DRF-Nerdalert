@@ -3,7 +3,7 @@ from django.db import models
 
 class ContactModel(models.Model):
     """
-    Model to handle the messages from the contact form.
+    Model to create the messages from the contact form.
     The model also has a response field for the admins when
     they are logged in on the admin page. The admin can then
     answer on the messages sent from the users.
