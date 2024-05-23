@@ -447,6 +447,8 @@ I also did manual testings on all website pages to ensure that everything was wo
 8. At the right handside go to Deployment.
 9. Then press the ![picture of the deployment icon on github](https://github.com/Kimskogfelter/Safari-Retreat/blob/main/assets/images/readme/deployment-icon.jpg) to go to the live website.
 
+
+
     This project was deployed to Heroku.com. The following steps shows how you do it:
     
 1. Start by creating a account on Herokus website
