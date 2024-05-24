@@ -12,6 +12,8 @@ class Comment(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     content = models.TextField()
+    star_rating = models.IntegerField(default=0)
+    hours_played = models.BooleanField(default=0)
 
     class Meta:
         ordering = ['-created_at']
