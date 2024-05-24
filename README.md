@@ -516,7 +516,8 @@ You can leave the tags field blank
 
 - I used Code Institutes API project walkthru to make this API https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+DRF+2021_T1/courseware/f775d54df4da44d18309888b3fe884f7/a146472df94c4691951c4f58ac43e30e/?child=first and be able to add own modules to it to make it "my own". I changed the likes app to be favourites insted. And the contact app is taken from another source: see below. The rest in this API is copied from the above links walkthru. 
 - I used this github projec to help me create the contact app and make it work: https://github.com/Hujanen91/sourdoughcircle_api/tree/main/contact. 
-I used the views.py, models.py and serializers.py to help me structure my own code. 
+I used the views.py, models.py and serializers.py to help me structure my own code.
+- I used this github project to help me create the star_rating in the comments app: https://github.com/Gareth-McGirr/body-doodles-api/tree/main/reviews
 
 
 #### All the thanks to the lovely students on slack. Specially the students in the community-sweden group for helping out when needed and my mentor for being so supportive and helpfull
