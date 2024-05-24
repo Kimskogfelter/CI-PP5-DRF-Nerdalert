@@ -65,7 +65,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io', 'localhost', 'https://pp5-nerdalert-drf-api-95b8bddc0859.herokuapp.com/',
+ALLOWED_HOSTS = ['8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io', 'localhost', 'pp5-nerdalert-drf-api-95b8bddc0859.herokuapp.com',
  os.environ.get('ALLOWED_HOST'),]
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io',]
