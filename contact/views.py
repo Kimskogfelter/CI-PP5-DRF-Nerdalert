@@ -2,7 +2,7 @@ from rest_framework import generics, permissions, viewsets
 from .models import ContactModel
 from .serializers import ContactSerializer
 
-class ContactListView(generics.ListAPIView):
+class ContactListView(generics.ListCreateAPIView):
     queryset = ContactModel.objects.all()
     serializer_class = ContactSerializer
     
