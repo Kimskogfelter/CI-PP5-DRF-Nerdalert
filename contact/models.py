@@ -15,9 +15,9 @@ class ContactModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     read = models.BooleanField(default=False)
     admin_answer = models.TextField(blank=True, null=True)
-    
+
     class Meta:
         ordering = ["-created_at"]
-    
+
     def __str__(self):
         return f"Contact message from {self.contact_name} : {self.contact_topic}"

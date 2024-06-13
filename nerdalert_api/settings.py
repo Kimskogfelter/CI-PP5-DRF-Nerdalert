@@ -52,7 +52,8 @@ JWT_AUTH_REFRESH_COOKIE = 'my-refresh-token'
 JWT_AUTH_SAMESITE = 'None'
 
 REST_AUTH_SERIALIZERS = {
-    'USER_DETAILS_SERIALIZER': 'nerdalert_api.serializers.CurrentUserSerializer'
+    'USER_DETAILS_SERIALIZER':
+    'nerdalert_api.serializers.CurrentUserSerializer'
 }
 
 
@@ -64,11 +65,12 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
+ALLOWED_HOSTS = ['8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io',
+                 'localhost',
+                 'pp5-nerdalert-drf-api-95b8bddc0859.herokuapp.com',
+                 os.environ.get('ALLOWED_HOST'), ]
 
-ALLOWED_HOSTS = ['8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io', 'localhost', 'pp5-nerdalert-drf-api-95b8bddc0859.herokuapp.com',
- os.environ.get('ALLOWED_HOST'),]
-
-CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io',]
+CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io', ]
 
 
 # Application definition
@@ -152,8 +154,6 @@ WSGI_APPLICATION = 'nerdalert_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -162,35 +162,36 @@ DATABASES = {
 }
 
 if 'DEV' in os.environ:
-     DATABASES = {
+    DATABASES = {
          'default': {
              'ENGINE': 'django.db.backends.sqlite3',
              'NAME': BASE_DIR / 'db.sqlite3',
          }
      }
 else:
-     DATABASES = {
+    DATABASES = {
          'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
      }
-    
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 
