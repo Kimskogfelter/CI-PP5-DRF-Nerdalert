@@ -65,7 +65,7 @@ The validator think the lines on rows 73, 126 and 182 are to long.
 The were left as they were because I didnt want to break any code so close
 to the end date. 
 
-![python validator result](readme/images/python validator.jpg)
+![python validator result](https://github.com/Kimskogfelter/pp5-drf-nerd-alert/blob/main/readme/images/python%20validator.jpg)
 
 
 **Bugs and their fixes**
