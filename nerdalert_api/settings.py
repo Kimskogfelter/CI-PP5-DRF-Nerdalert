@@ -128,10 +128,6 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
 
 CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOWED_ORIGINS = [
-    "https://3000-kimskogfelt-pp5frontend-cohhk33d7ml.ws-eu114.gitpod.io/", "https://pp5-frontend-nerdalert-7bbffbba1478.herokuapp.com/",
-]
-
 ROOT_URLCONF = 'nerdalert_api.urls'
 
 TEMPLATES = [
