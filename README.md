@@ -70,7 +70,9 @@ to the end date.
 
 **Bugs and their fixes**
 
-No bugs found.
+The CSS for the deployed API website isnt working. I have checked the devtools for help on where the code 
+needs to be changed in order for the CSS to apply. I havent been able to find and correct that part of the code
+so the CSS is still not working. 
 
 <hr>
 <br>
