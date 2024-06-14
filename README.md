@@ -21,6 +21,45 @@ The Kanban board was created using github projects and can be located [here](htt
 
 <hr>
 
+### Entity Relationship Diagram (ERD)
+
+Entities
+
+#### User
+* Attributes: id, username, email, password (not shown in the models but typically present in Django's built-in User model).
+* Relationships:
+One-to-One with Profile.
+One-to-Many with Comment, Favourite, Post, Follower.
+#### Profile
+* Attributes: id, owner (ForeignKey to User), created_at, updated_at, name, content, image.
+* Relationships: One-to-One with User.
+#### Post
+* Attributes: id, owner (ForeignKey to User), created_at, updated_at, title, content, image, image_filter.
+* Relationships: One-to-Many with Comment, Favourite.
+#### Comment
+* Attributes: id, owner (ForeignKey to User), post (ForeignKey to Post), created_at, updated_at, content.
+* Relationships: One-to-Many with Post.
+#### Favourite
+* Attributes: id, owner (ForeignKey to User), post (ForeignKey to Post), created_at.
+* Relationships: One-to-Many with User and Post.
+#### Follower
+* Attributes: id, owner (ForeignKey to User), followed (ForeignKey to User), created_at.
+* Relationships: One-to-Many with User.
+#### ContactModel
+* Attributes: id, contact_name, contact_topic, contact_email, contact_message, created_at, read.
+* Relationships: None.
+#### Relationships
+* User to Profile: One-to-One
+* User to Comment: One-to-Many
+* User to Favourite: One-to-Many
+* User to Post: One-to-Many
+* User to Follower: One-to-Many
+* Post to Comment: One-to-Many
+* Post to Favourite: One-to-Many
+* Favourite to User: Many-to-Many (through owner)
+* Favourite to Post: Many-to-Many (through post)
+* Follower to User (as owner): Many-to-Many
+* Follower to Followed User: Many-to-Many
 
 ### Epics
 
