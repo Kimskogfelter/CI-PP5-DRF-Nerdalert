@@ -14,7 +14,6 @@ class ContactModel(models.Model):
     contact_message = models.TextField(max_length=750)
     created_at = models.DateTimeField(auto_now_add=True)
     read = models.BooleanField(default=False)
-    admin_answer = models.TextField(blank=True, null=True)
 
     class Meta:
         ordering = ["-created_at"]
