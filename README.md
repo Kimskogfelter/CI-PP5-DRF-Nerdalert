@@ -75,7 +75,7 @@ The user stories for this project can be found in this readme: https://github.co
 
 ## Security
 
-The ermissions class IsOwnerOrReadOnly was added to this project to ensure that only the users who create the content are able to edit or delete it.
+The ermissions class IsOwnerOrReadOnly was added to this project to make sure that only the users who create the content are able to edit or delete it.
 
 ## Technologies
 
