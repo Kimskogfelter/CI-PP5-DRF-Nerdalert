@@ -70,12 +70,6 @@ ALLOWED_HOSTS = ['https://kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-i
                  'pp5-nerdalert-drf-api-95b8bddc0859.herokuapp.com',
                  os.environ.get('ALLOWED_HOST'), ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     "https://3000-kimskogfelt-pp5frontend-xovh8zu3tbw.ws.codeinstitute-ide.net",
-#     "https://kimskogfelt-pp5frontend-xovh8zu3tbw.ws.codeinstitute-ide.net"
-# ]
-
-# CORS_ORIGIN_ALLOW_ALL = True
 
 CSRF_TRUSTED_ORIGINS = ['https://kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-ide.net', ]
 
