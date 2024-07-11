@@ -130,6 +130,10 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
 
 CORS_ALLOW_CREDENTIALS = True
 
+CORS_ORIGIN_WHITELIST = (
+    "https://pp5-frontend-nerdalert-7bbffbba1478.herokuapp.com",
+)
+
 ROOT_URLCONF = 'nerdalert_api.urls'
 
 TEMPLATES = [
