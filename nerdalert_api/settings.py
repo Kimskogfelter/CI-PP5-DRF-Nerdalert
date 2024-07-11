@@ -70,11 +70,12 @@ ALLOWED_HOSTS = ['https://kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-i
                  'pp5-nerdalert-drf-api-95b8bddc0859.herokuapp.com',
                  os.environ.get('ALLOWED_HOST'), ]
 
-CORS_ALLOWED_ORIGINS = [
-    "https://3000-kimskogfelt-pp5frontend-xovh8zu3tbw.ws.codeinstitute-ide.net",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://3000-kimskogfelt-pp5frontend-xovh8zu3tbw.ws.codeinstitute-ide.net",
+#     "https://kimskogfelt-pp5frontend-xovh8zu3tbw.ws.codeinstitute-ide.net"
+# ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ORIGIN_ALLOW_ALL = True
 
 CSRF_TRUSTED_ORIGINS = ['https://kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-ide.net', ]
 
@@ -121,7 +122,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
 ]
 
 if 'CLIENT_ORIGIN' in os.environ:
@@ -130,9 +130,8 @@ if 'CLIENT_ORIGIN' in os.environ:
     ]
 
 if 'CLIENT_ORIGIN_DEV' in os.environ:
-    extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
-    CORS_ALLOWED_ORIGIN_REGEXES = [
-        rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
+    CORS_ALLOWED_ORIGINS = [
+        os.environ.get('CLIENT_ORIGIN_DEV')
     ]
 
 CORS_ALLOW_CREDENTIALS = True
