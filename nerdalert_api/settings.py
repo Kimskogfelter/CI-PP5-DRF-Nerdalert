@@ -65,12 +65,16 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
-ALLOWED_HOSTS = ['8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io',
+ALLOWED_HOSTS = ['https://kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-ide.net',
                  'localhost',
                  'pp5-nerdalert-drf-api-95b8bddc0859.herokuapp.com',
                  os.environ.get('ALLOWED_HOST'), ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOWED_ORIGINS = [
+    "https://3000-kimskogfelt-pp5frontend-xovh8zu3tbw.ws.codeinstitute-ide.net",
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = ['https://kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-ide.net', ]
 
