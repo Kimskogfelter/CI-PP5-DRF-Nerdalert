@@ -70,7 +70,7 @@ ALLOWED_HOSTS = ['8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io',
                  'pp5-nerdalert-drf-api-95b8bddc0859.herokuapp.com',
                  os.environ.get('ALLOWED_HOST'), ]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-kimskogfelt-pp5drfnerda-tagvq47uylz.ws-eu114.gitpod.io', ]
+CSRF_TRUSTED_ORIGINS = ['https://kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-ide.net', ]
 
 
 # Application definition
