@@ -113,6 +113,107 @@ The CSS for the deployed API website isnt working. I have checked the devtools f
 needs to be changed in order for the CSS to apply. I havent been able to find and correct that part of the code
 so the CSS is still not working. 
 
+### Manual testing
+
+I also did manual testings on all API pages to ensure that everything was working as expected:
+
+* Comments page
+Description: Make sure all the created comments are listed
+
+Steps:
+
+Go to the /comments page for the API
+Check that the created comments are listed
+
+Expected:
+
+I should be able to see all the created comments
+
+Actual:
+
+I was able to see all the created comments
+
+* Contact page
+Description: Make sure all the submitted contact forms are listed
+
+Steps:
+
+Go to the /contact page for the API
+Check that the submitted contact forms are listed
+
+Expected:
+
+I should be able to see all the submitted contact forms
+
+Actual:
+
+I was able to see all the submitted contact forms
+
+* Favourites page
+Description: Make sure the favourites counts are listed 
+
+Steps:
+
+Go to the /favourites page for the API
+Check that the favourites are displayed in a list
+
+Expected:
+
+I should be able to see post that are marked with a heart to be a favourite
+
+Actual:
+
+I was able to see the different post marked as a favourite in a list
+
+* Followers page
+Description: Make sure the followers counts are listed 
+
+Steps:
+
+Go to the /followers page for the API
+Check that the followers are displayed in a list
+
+Expected:
+
+I should be able to see all the profiles that got a follower, and which follower that is
+
+Actual:
+
+I was able to see the different profiles and which profiles that followed them
+
+* Posts page
+Description: Make sure the posts list are displayed
+
+Steps:
+
+Go to the /posts page for the API
+Check that all the created posts are displayed in a list
+
+Expected:
+
+I should be able to see all the created posts in a list
+
+Actual:
+
+I was able to see the listing for all the created posts
+
+* Profiles page
+Description: Make sure the created profiles are listed
+
+Steps:
+
+Go to the /profiles page for the API
+Check that all the created profiles are displayed in a list
+
+Expected:
+
+I should be able to see all the created profiles in a list
+
+Actual:
+
+I was able to see the listing for all the created profiles
+
+
 <hr>
 <br>
 
