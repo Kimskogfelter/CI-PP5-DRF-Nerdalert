@@ -118,6 +118,7 @@ so the CSS is still not working.
 I also did manual testings on all API pages to ensure that everything was working as expected:
 
 * Comments page
+
 Description: Make sure all the created comments are listed
 
 Steps:
@@ -134,6 +135,7 @@ Actual:
 I was able to see all the created comments
 
 * Contact page
+
 Description: Make sure all the submitted contact forms are listed
 
 Steps:
@@ -150,6 +152,7 @@ Actual:
 I was able to see all the submitted contact forms
 
 * Favourites page
+
 Description: Make sure the favourites counts are listed 
 
 Steps:
@@ -166,6 +169,7 @@ Actual:
 I was able to see the different post marked as a favourite in a list
 
 * Followers page
+
 Description: Make sure the followers counts are listed 
 
 Steps:
@@ -182,6 +186,7 @@ Actual:
 I was able to see the different profiles and which profiles that followed them
 
 * Posts page
+
 Description: Make sure the posts list are displayed
 
 Steps:
@@ -198,6 +203,7 @@ Actual:
 I was able to see the listing for all the created posts
 
 * Profiles page
+
 Description: Make sure the created profiles are listed
 
 Steps:
