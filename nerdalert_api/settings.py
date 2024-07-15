@@ -72,7 +72,7 @@ ALLOWED_HOSTS = ['8000-kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-ide.
                  os.environ.get('ALLOWED_HOST'), ]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-ide.net', ]
+CSRF_TRUSTED_ORIGINS = ['https://kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-ide.net', 'https://8000-kimskogfelt-pp5drfnerda-67rtxmjjy1z.ws.codeinstitute-ide.net']
 
 
 # Application definition

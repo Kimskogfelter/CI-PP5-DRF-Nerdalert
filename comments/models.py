@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
 from posts.models import Post
 
 
@@ -14,6 +15,10 @@ class Comment(models.Model):
     content = models.TextField()
     starRating = models.IntegerField(
         default=0,
+        validators=[
+            MinValueValidator(1),
+            MaxValueValidator(5),  
+        ],
         help_text="Rate this comment from 1 to 5."
     )
 
