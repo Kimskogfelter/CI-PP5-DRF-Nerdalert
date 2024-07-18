@@ -16,8 +16,8 @@ class Comment(models.Model):
     starRating = models.IntegerField(
         default=0,
         validators=[
-            MinValueValidator(0),
-            MaxValueValidator(100),  
+            MinValueValidator(1),
+            MaxValueValidator(5),  
         ],
         help_text="Rate this comment from 1 to 5."
     )
